@@ -1,4 +1,4 @@
-'use strict';
+
 
 // const router = require('hapi-router');
 const Boom = require('boom');
@@ -15,13 +15,13 @@ exports.register = function (server, options, next) {
         path: '/homies',
         handler: function (request, reply) {
 
-            db.homies.find((err, docs) => {
+            db.collection('homies').find((err, docs) => {
 
-                if (err) {
-                    return reply(Boom.wrap(err, 'Internal MongoDB error'));
-                }
-
-                reply(docs, 'these are the docs');
+                // if(err) {
+                //     return reply(Boom.wrap(err, 'Internal MongoDB error'));
+                // }
+               
+                reply(docs);
             });
 
         }

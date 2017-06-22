@@ -26,26 +26,26 @@ server.register([
 });
 
 
-server.route({
-    method: 'GET',
-    path: '/',
-    handler: function (request, reply) {
-        reply('Hello, world!');
-    }
-});
+// server.route({
+//     method: 'GET',
+//     path: '/',
+//     handler: function (request, reply) {
+//         reply('Hello, world!');
+//     }
+// });
 
 // server.route({
 //     method: 'GET',
-//     path: '/friends',
+//     path: '/homies',
 //     handler: function (request, reply) {
 //         reply('friends will show here soon!');
 //     }
 // });
 
-server.start((err) => {
+// server.start((err) => {
 
-    if (err) {
-        throw err;
-    }
-    console.log(`Server running at: ${server.info.uri}`);
-});
+//     if (err) {
+//         throw err;
+//     }
+//     console.log(`Server running at: ${server.info.uri}`);
+// });

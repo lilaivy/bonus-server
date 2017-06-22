@@ -1,12 +1,12 @@
-const Hapi = require('hapi');
-const bodyParser = require('hapi-bodyparser');
+// const Hapi = require('hapi');
+// const bodyParser = require('hapi-bodyparser');
 
-const app = new Hapi();
+// const app = new Hapi();
 
 
-app.use(bodyParser());
+// app.use(bodyParser());
 
-const homies = require('./routes/homies');
-app.use(homies.routes());
+// const homies = require('./routes/homies');
+// app.use(homies.routes());
 
-module.exports = app;
+// module.exports = app;
