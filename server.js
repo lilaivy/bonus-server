@@ -8,7 +8,6 @@ server.connection({ port: 3000, host: 'localhost' });
 
 //connecting to Mongo here:
 server.app.db = mongojs('mongodb://localhost:27017/friends', ['homies']);
-console.log('server.app.db:', server.app.db);
 
 //Load plugins and start server
 server.register([
@@ -27,26 +26,5 @@ server.register([
 });
 
 
-// server.route({
-//     method: 'GET',
-//     path: '/',
-//     handler: function (request, reply) {
-//         reply('Hello, world!');
-//     }
-// });
 
-// server.route({
-//     method: 'GET',
-//     path: '/homies',
-//     handler: function (request, reply) {
-//         reply('friends will show here soon!');
-//     }
-// });
 
-// server.start((err) => {
-
-//     if (err) {
-//         throw err;
-//     }
-//     console.log(`Server running at: ${server.info.uri}`);
-// });
