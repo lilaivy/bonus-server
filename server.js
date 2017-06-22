@@ -7,11 +7,11 @@ const server = new Hapi.Server();
 server.connection({ port: 3000, host: 'localhost' });
 
 //connecting to Mongo here:
-server.app.db = mongojs('hapi-rest-mongo', ['friends']);
+server.app.db = mongojs('hapi-rest-mongo', ['homies']);
 
 //Load plugins and start server
 server.register([
-    require('./routes/friends')
+    require('./routes/homies')
 ], (err) => {
 
     if (err) {
@@ -26,14 +26,13 @@ server.register([
 });
 
 
-//routes:
-// server.route({
-//     method: 'GET',
-//     path: '/',
-//     handler: function (request, reply) {
-//         reply('Hello, world!');
-//     }
-// });
+server.route({
+    method: 'GET',
+    path: '/',
+    handler: function (request, reply) {
+        reply('Hello, world!');
+    }
+});
 
 // server.route({
 //     method: 'GET',

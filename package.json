@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/lilaivy/bonus-server#readme",
   "dependencies": {
-    "hapi": "^16.4.3"
+    "hapi": "^16.4.3",
+    "hapi-bodyparser": "^1.0.2",
+    "hapi-mongoose": "^1.0.1"
   }
 }
