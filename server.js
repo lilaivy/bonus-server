@@ -7,7 +7,8 @@ const server = new Hapi.Server();
 server.connection({ port: 3000, host: 'localhost' });
 
 //connecting to Mongo here:
-server.app.db = mongojs('hapi-rest-mongo', ['homies']);
+server.app.db = mongojs('mongodb://localhost:27017/friends', ['homies']);
+console.log('server.app.db:', server.app.db);
 
 //Load plugins and start server
 server.register([
