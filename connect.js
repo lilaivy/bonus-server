@@ -1,5 +1,5 @@
 /* eslint-disable */
-const mongoose = require('mongoose');
+const mongoose = require('mongoose-hapi');
 mongoose.Promise = Promise;
 
 const dbUri = 'mongodb://localhost:27017/hapi-homies'; 
