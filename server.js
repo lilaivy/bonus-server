@@ -11,7 +11,7 @@ server.app.db = mongojs('hapi-rest-mongo', ['homies']);
 
 //Load plugins and start server
 server.register([
-    require('./routes/homies')
+    require('./lib/routes/homies')
 ], (err) => {
 
     if (err) {
