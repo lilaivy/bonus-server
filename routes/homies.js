@@ -2,7 +2,7 @@
 
 // const router = require('hapi-router');
 const Boom = require('boom');
-// const homie = require('./models/homie');
+// const Homie = require('../models/homie');
 // const uuid = require('uuid');
 // const Joi = require('joi');
 
@@ -14,13 +14,14 @@ exports.register = function (server, options, next) {
         method: 'GET',
         path: '/homies',
         handler: function (request, reply) {
+        // header: 'Content-type:application/json';
 
-            db.collection('homies').find((err, docs) => {
+            db.homies.find((err, docs) => {
 
-                // if(err) {
-                //     return reply(Boom.wrap(err, 'Internal MongoDB error'));
-                // }
-               
+                if (err) {
+                    return reply(Boom.wrap(err, 'Internal MongoDB error'));
+                }
+
                 reply(docs);
             });
 
