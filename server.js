@@ -10,3 +10,5 @@ server.start((err) => {
     }
     console.log(`Server running at: ${server.info.uri}`);
 });
+
+//add resource
