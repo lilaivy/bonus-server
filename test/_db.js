@@ -1,6 +1,5 @@
-process.env.MONGODB_URI = 'mongodb://localhost:27017/hapi-homies-test';
-require('../lib/connect');
-const connection = require('mongoose').connection;
+process.env.MONGODB_URI = 'mongodb://localhost:27017/friends-test';
+const connection = require('mongoose-hapi').connection;
 
 module.exports = {
     drop() {
