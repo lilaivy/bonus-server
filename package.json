@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lilaivy/bonus-server/issues"
   },
-  "homepage": "https://github.com/lilaivy/bonus-server#readme"
+  "homepage": "https://github.com/lilaivy/bonus-server#readme",
+  "dependencies": {
+    "hapi": "^16.4.3"
+  }
 }
